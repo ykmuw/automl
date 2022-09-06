@@ -98,7 +98,7 @@ write.csv(movie_rate_binary_df, "data/imdb_movie_rating_2010_2022.csv", row.name
 rm(list = c("movie_rating_df"))
 ```
 
-# How the dataset is applied in AutoML?
+# How the dataset is applied in AutoML
 Any comma-separated value (CSV) files can be uploaded onto AutoML. Sample dataset is prepared and stored as sample/imdb_movie_rating_2010_2022.csv.
 A user’s uploaded files are stored in the data folder as 1.csv, 2.csv, and so on in Spark in Local.
 
