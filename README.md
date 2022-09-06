@@ -63,6 +63,7 @@ movie_unpivot_df <- movie_df %>%
   separate_rows(genres, sep = ",") %>%
   filter(genres != "\\N") %>%
   filter(startYear >= 2010 & startYear <= 2022) %>%
+  mutate(startYear = as.character(startYear)) %>%
   select(tconst, primaryTitle, isAdult, startYear, runtimeMinutes, genres)
 #View(movie_unpivot_df)
 
@@ -123,19 +124,19 @@ A user’s uploaded files are stored in the data folder as 1.csv, 2.csv, and so 
 # Install on your mac
 
 ```
-git clone git@github.com:ykmorimoto/automl.git
+git clone git@github.com:ykmuw/automl.git
 cd automl
 python3 -m venv .
 source ./bin/activate
-pip install --upgrade pip
+pip3 install --upgrade pip
 
 # the following might be needed to fix pip install lightgbm on mac
 # brew install libomp
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
-python3 init_db.py (once input.db has been created, you don't need to run this again)
-python3 app.py
+python3.9 init_db.py (once input.db has been created, you don't need to run this again)
+python3.9 app.py
 # open 127.0.0.1:5000 on your browser
 ```
 
@@ -167,10 +168,17 @@ python3 app.py
 ```
 <img src = "images/application_diagram.png" width="800">
 
-# Features
-* Register csv datasets and manage experiment variables per dataset
+# AutoML Features
+* Select sample/imdb_movie_rating_2010_2022.csv from your local folder through `Choose File` button, and click `Import a new dataset`. 
 <p align="center">
   <img src="images/automl_manage_dataset.jpg">
+</p>
+
+* AutoML registers the dataset you uploaded, and display string-type as default in `Category Variables`, as well as string-type or if the value contains too many unique variables as default in `Unused Variables for Modeling`. 
+![data quality](images/automl_summary_uploaded_date.jpg)
+![data quality](images/automl_summary_date_uploaded.jpg)
+<p align="center">
+  <img src="images/automl_summary_data_uploaded.jpg">
 </p>
 
 * Provide useful comments to check data quality (missing value, uniques, and outliers)
