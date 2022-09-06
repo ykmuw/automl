@@ -166,7 +166,7 @@ python3.9 app.py
 └── requirements.txt
 └── LICENSE
 ```
-<img src = "images/application_diagram.png" width="800">
+<img src = "images/automl_application_diagram.png" width="800">
 
 # AutoML Features
 * Select sample/imdb_movie_rating_2010_2022.csv from your local folder through `Choose File` button, and click `Import a new dataset`. 
@@ -175,10 +175,10 @@ python3.9 app.py
 </p>
 
 * AutoML registers the dataset you uploaded, and display string-type as default in `Category Variables`, as well as string-type or if the value contains too many unique variables as default in `Unused Variables for Modeling`. 
-![data quality](images/automl_summary_uploaded_date.jpg)
-![data quality](images/automl_summary_date_uploaded.jpg)
+![data quality](images/automl_summary_uploaded_data.jpg)
+![data quality](images/automl_summary_data_uploaded.jpg)
 <p align="center">
-  <img src="images/automl_summary_data_uploaded.jpg">
+  <img src="images/automl_summary_uploaded_data.jpg">
 </p>
 
 * Provide useful comments to check data quality (missing value, uniques, and outliers)
