@@ -189,7 +189,7 @@ Not applied category variables - too many unique values
 Here are some ML model diagram and algorithms are explained in code sample in AutoML.
 ![Random Forest](images/automl_random_forest.png)
 ![Gradient Boosting](images/automl_gradient_boosting.png)
-![Logistic Regression](images/automl_logistic_regression.png)
+![Logistic Regression](images/automl_logistic_regression.jpg)
 
 # Future enhancement
 * Increase the number of comparable ML models
