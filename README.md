@@ -166,6 +166,7 @@ python3 app.py
 # Features
 * Register csv datasets and manage experiment variables per dataset
 ![manage dataset](images/automl_manage_dataset.jpg)
+<img src = "images/automl_manage_dataset.jpg" width="800">
 * Provide useful comments to check data quality (missing value, uniques, and outliers)
 ![data quality](images/data_quality.png)
 * Visualize data distribution per variable to understand data
