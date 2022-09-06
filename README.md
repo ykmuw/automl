@@ -130,7 +130,7 @@ pip install --upgrade pip
 
 pip install -r requirements.txt
 
-python3 init_db.py
+python3 init_db.py (once input.db has been created, you don't need to run this again)
 python3 app.py
 # open 127.0.0.1:5000 on your browser
 ```
@@ -182,7 +182,12 @@ Not applied category variables - too many unique values
 * Display ML models in graph for Spark in Local
 ![explainable ai](images/explainable_ai.png)
 
-# Future enhancement
+# Algorithms
+Here are some ML model diagram and algorithms are explained in code sample in AutoML.
+![Random Forest](images/automl_random_forest.png)
+![Gradient Boosting](images/automl_gradient_boosting.png)
+![Logistic Regression](images/automl_logistic_regression.png)
 
+# Future enhancement
 * Increase the number of comparable ML models
 * Add functions to tune multiple parameters by grid search.
