@@ -185,9 +185,9 @@ python3.9 app.py
   <img src="images/automl_summary_samples.jpg" width="800" hight="700">
 </p>
 
-* AutoML helps visualize data distribution per variable for users to understand data
+* AutoML helps visualize data distribution per variable for users to understand data by clicking each variable link.
 ### Applied category variables - normal distribution
-![histgram](images/histgram_pclass.png)
+![histgram](images/automl_variable_link_genres.png)
 ### Not applied category variables - too many missing values
 ![histgram](images/histgram_age.png)
 ### Not applied category variables - too many unique values
