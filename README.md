@@ -263,10 +263,6 @@ _Genres_Documentary has the most impact, and averageRating, rateGreatehrThan8, a
 Here are some ML model diagrams and algorithms, and sharing the algorithm code sample used in AutoML.
 <p align="center">
   <img src="images/automl_random_forest.jpg">
-# Algorithms
-Here are some ML model diagrams and algorithms, and sharing the algorithm code sample used in AutoML.
-<p align="center">
-  <img src="images/automl_random_forest.jpg">
 </p>
 <p align="center">
   <img src="images/automl_gradient_boosting.jpg">
