@@ -217,29 +217,29 @@ python3.9 app.py
 # AutoML Evaluation Metrics
 * AutoML fits multiple ML models automatically and provide users comparable statistical scores. Users can click each ML model link to observe output in graph.
 
-## Output of target binary variables as `rateGraterThan8`  
+### Output of target binary variables as `rateGraterThan8`  
 ![metrics](images/automl_evaluation_metrics.png)
 
-* Display ML models in graph - LightGBM
+* LightGBM
 ![model_graph](images/automl_LightGBM.png)
 
-* Display ML models in graph - Random Forest
+* Random Forest
 ![model_graph](images/automl_metrics_Random_Forest.png)
 
-* Display ML models in graph - Ridge Logistic Regression
+* Ridge Logistic Regression
 ![model_graph](images/automl_Ridge_Logistic_Regression.png)
 
 
-## Output of target binary variables as `voteHighLow`  
+### Output of target binary variables as `voteHighLow`  
 ![metrics](images/automl_evaluation_metrics2.png)
 
-* Display ML models in graph - LightGBM
+* LightGBM
 ![model_graph](images/automl_metrics_LightGBM2.png)
 
-* Display ML models in graph - Gradient Boosting
+* Gradient Boosting
 ![model_graph](images/automl_metrics_Gradient_Boosting2.png)
 
-* Display ML models in graph - Logistic Regression
+* Logistic Regression
 ![model_graph](images/automl_metrics_Logistic_Regression2.png)
 
 
