@@ -15,7 +15,7 @@ Output metrics help users select the most and least successful models for a give
 
 
 # AutoML
-* While a machine learning(ML) project requires iterative proceses from understanding data to tuning model parameters in order to develop a optimal model for data, some tasks in the analysis process can be automated. AutoML implements functions to accelerate the process of developing the ML model.
+* While a machine learning(ML) project requires iterative processes from understanding data to tuning model parameters in order to develop an optimal model for data, some tasks in the analysis process can be automated. AutoML implements functions to accelerate the process of developing the ML model.
 <p align="center">
 <img src = "images/automl_diagram.jpg" width="800">
 </p>
@@ -29,7 +29,7 @@ Output metrics help users select the most and least successful models for a give
 ![shap](images/automl_shap.png)
 
 
-# Users profile
+# User's profile
 * Our target users are those who want to analyze data and have the results represented in multiple ML models.
 * To run the AutoML application, users should download required libraries and run Python modules (see `Install on your mac` section).
 
@@ -198,7 +198,7 @@ Logs when AutoML is executed:
   <img src="images/automl_summary_file_uploaded.png" width="800" hight="700">
 </p>
 
-* AutoML provides users uploaded file data summary in `Summary` tab, and data samples in `Samples` tab. There are also useful comments available to check data quality (missing value, uniques, and outliers).
+* AutoML provides users uploaded file data summary in `Summary` tab, and data samples in `Samples` tab. There are also useful comments available to check data quality (missing value, unique, and outliers).
 <p align="center">
   <img src="images/automl_summary_summary.png" width="800" hight="700">
   <img src="images/automl_summary_samples.png" width="800" hight="700">
@@ -253,9 +253,8 @@ _RuntimeMinutes, averageRating, genres_DOcumentary have the most impact, and gen
 _Genres_Documentary has the most impact, and averageRating, rateGreatehrThan8, and runtimeMinutes equally have impact on voteHighLow prediciton._
 ![model_graph](images/automl_metrics_Logistic_Regression2.png)
 
-
 ### Evaluated results are stored in `Experiments` tab 
-* Clicking `id` retuns to the Evaluation Metrics page
+* Clicking `id` returns to the Evaluation Metrics page
 ![metrics](images/automl_summary_experiments.png)
 
 
@@ -270,6 +269,7 @@ Here are some ML model diagrams and algorithms, and sharing the algorithm code s
 <p align="center">
   <img src="images/automl_logistic_regression.jpg">
 </p>
+
 
 # Future enhancement
 * Increase the number of comparable ML models.
