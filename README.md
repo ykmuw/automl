@@ -219,7 +219,7 @@ python3.9 app.py
 ![model_graph](images/automl_LightGBM.png)
 
 * Display ML models in graph - Random Forest
-![model_graph](images/automl_Ramdom_Forest.png)
+![model_graph](images/automl_metrics_Ramdom_Forest.png)
 
 * Display ML models in graph - Ridge Logistic Regression
 ![model_graph](images/automl_Ridge_Logistic_Regression.png)
