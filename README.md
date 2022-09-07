@@ -21,7 +21,8 @@ Output metrics help users select the most and least successful models for a give
 * Quality columns show them how input data look.
 * After ML modeling, area under the curve (AUC), precision, recall, and accuracy values are displayed.
 * For Spark in Local, SHapley Additive exPlanations (SHAP) is generated in histgram by clicking the ML model names, so that users can figire which category values impact the most in the ML modeling. SHAP is a method of explaining individual predictions. A positive SHAP value means a positive impact on prediction. In AutoML, SHAP values are converted to absolute values, and displayed in a histgram.
- 
+![shap](images/autml_shap.png)
+
 # Users profile
 * Our target users are those who want to analyze data and have the results represented in multiple ML models.
 * To run the AutoML application, users should download required libraries and run Python modules (see Install on your mac section).
@@ -108,9 +109,9 @@ A user’s uploaded files are stored in the data folder as 1.csv, 2.csv, and so 
 * The variable that AutoML recommends from a list of prospects is the target (predictor) variable selected for ML modeling.
 
 ### Category variables
-* As a default, AutoML detects variables that cannot be used for ML modeling because they are non-numerical expressions, such as cabin (C85, C123, etc.), embarked (S, C, and Q), name (Braund, Mr. Owner Harris, etc.), and ticket (AJ5 21171, 113803, etc.). ]
-* In addition to default detection, the selection of more category variables is necessary. These variables should be assigned numerical expressions 1 or 0, and one of them is dropped by get_dummies function with drop_first = True.
-<img src = "images/data_clearning_for_category_variables.png" width="800">
+* As a default, AutoML detects variables that cannot be used for ML modeling because they are non-numerical expressions.
+* In addition to default detection, user's selected variables in `Category Variables` should be assigned numerical expressions 1 or 0, and one of them is dropped by get_dummies function with drop_first = True.
+<img src = "images/automl_data_clearning_for_category_variables.png" width="800">
 
 ### Unused variables 
 * By default, AutoML identifies variables that are inappropriate for use in ML modeling, such as those with an excessive number of missing values, too many unique values, and so on. Aside from carrying out default detection, users are required to select more unused variables on the basis of their decisions.
@@ -119,7 +120,10 @@ A user’s uploaded files are stored in the data folder as 1.csv, 2.csv, and so 
 * AUC score: Receiver Operating Characteristic (ROC) = FPR*chi + TPR
 * Precision score: TP/(TP+FP)
 * Recall score: TP/(TP+FN)
-* Accuracy score: (TP+TN)/(TP+TN+FP+FN) 
+* Accuracy score: (TP+TN)/(TP+TN+FP+FN)
+
+### Internally non-numerical expressions are converted to numerical expressions 1 or 0
+![metrics](images/data_clearning_for_category_variables.png) 
 
 # Install on your mac
 
@@ -187,12 +191,13 @@ python3.9 app.py
 
 * AutoML helps visualize data distribution per variable for users to understand data by clicking each variable link.
 ![summary](images/automl_summary_links.png)
-####   Applied category variables - skewed distribution
+
+* Applied category variables - skewed distribution
 ![histgram](images/automl_variable_link_genres.png)
-####   Applied category variables - normal distribution
+* Applied category variables - normal distribution
 ![histgram](images/automl_variable_link_averageRating.png)
 ![histgram](images/automl_variable_link_startYear.png)
-####   Not applied category variables - too many unique values
+* Not applied category variables - too many unique values
 ![histgram](images/automl_variable_link_primaryTitle.png)
 
 * You will select a binary object variable in `Target` which you want to predict, as well as you will select appropriate values in `Category Variables` which you want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below, then click `Run`.
@@ -200,10 +205,8 @@ python3.9 app.py
 
 
 
-* Internally non-numerical expressions are converted to numerical expressions 1 or 0
-![metrics](images/data_clearning_for_category_variables.png) 
 * Fit multiple ML models automatically and compare statistical scores
-![metrics](images/metrics.png)
+![metrics](images/metrics.jpng)
 * Display ML models in graph for Spark in Local
 ![explainable ai](images/explainable_ai.png)
 
