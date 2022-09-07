@@ -186,12 +186,13 @@ python3.9 app.py
 </p>
 
 * AutoML helps visualize data distribution per variable for users to understand data by clicking each variable link.
-#### Applied category variables - skewed distribution
+![summary](images/automl_summary_links.png)
+####   Applied category variables - skewed distribution
 ![histgram](images/automl_variable_link_genres.png)
-#### Applied category variables - normal distribution
+####   Applied category variables - normal distribution
 ![histgram](images/automl_variable_link_averageRating.png)
 ![histgram](images/automl_variable_link_startYear.png)
-##### Not applied category variables - too many unique values
+####   Not applied category variables - too many unique values
 ![histgram](images/automl_variable_link_primaryTitle.png)
 
 * You will select a binary object variable in `Target` which you want to predict, as well as you will select appropriate values in `Category Variables` which you want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below.
@@ -222,5 +223,5 @@ Here are some ML model diagrams and algorithms, and sharing the algorithm code s
 </p>
 
 # Future enhancement
-* Increase the number of comparable ML models
+* Increase the number of comparable ML models.
 * Add functions to tune multiple parameters by grid search.
