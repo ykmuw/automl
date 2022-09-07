@@ -42,7 +42,11 @@ IMDb (an abbreviation of Internet Movie Database) is an online database of infor
 For AutoML, title.basics.tsv.gz and title.ratings.tsv.gz are applied, then joined and modified in R for the AutoML input.
 ###
 For testing AutoML, movies as a `titleType` and `startYear` between 2010 and 2020 are filtered and used from the movie dataset, and rating dataset is used as it is.
-Each `primaryTitle` is categorized as one or more genres. New columns such as are added such as rateHighLow, voteHighLow, and rateGraterThan8 are added for the AutoML inference.
+Each `primaryTitle` is categorized as one or more genres. New columns such as rateHighLow, voteHighLow, and rateGraterThan8 are added as target variables for the AutoML prediciton.
+* rateHighLow: set 1 if rate is greater than equal average rate, and 0 if rate is smaller than average rate.
+* voteHighLow: set 1 if number of vote is greater than equal average numbers, and 0 if number of vote is smaller than average numbers.
+* rateGraterThan8: set 1 if rate is grater than equal average rate 8.0 (scale is 1.0 to 10.0), and 0 if rate is smaller than average rate 8.0.
+
 
 # R in dataset preparation
 ```
