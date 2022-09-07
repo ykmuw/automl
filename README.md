@@ -233,7 +233,7 @@ _NumVotes, runtimeMinutes, and genres_Documentary have the most impact on rateGr
 _NumVotes, genres_Documentary, and runtimeMinutes have the most impact on rateGraterThan8 prediction._
 ![model_graph](images/automl_metrics_Random_Forest.png)
 
-* <ins>Ridge Logistic Regression</ins> . 
+* <ins>Ridge Logistic Regression</ins>  
 _R_untimeMinutes has the most impact, and genres_Documentary and genres_Drama have some impact on rateGraterThan8 prediction._
 ![model_graph](images/automl_Ridge_Logistic_Regression.png)
 
