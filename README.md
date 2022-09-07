@@ -233,21 +233,25 @@ _NumVotes, runtimeMinutes, and genres_Documentary have the most impact on rateGr
 _NumVotes, genres_Documentary, and runtimeMinutes have the most impact on rateGraterThan8 prediction._
 ![model_graph](images/automl_metrics_Random_Forest.png)
 
-* <ins>Ridge Logistic Regression</ins>
+* <ins>Ridge Logistic Regression</ins> . 
 _R_untimeMinutes has the most impact, and genres_Documentary and genres_Drama have some impact on rateGraterThan8 prediction._
 ![model_graph](images/automl_Ridge_Logistic_Regression.png)
 
 ### Output of target binary variables as `voteHighLow`  
 ![metrics](images/automl_evaluation_metrics2.png)
 
-* LightGBM
+* <ins>LightGBM</ins> . 
+_RuntimeMinutes has the most impact, and averageRating, genres_Documentary, and genres_Dorama have some impact on voteHighLow prediction._
 ![model_graph](images/automl_metrics_LightGBM2.png)
 
-* Gradient Boosting
+* <ins>Gradient Boosting</ins> . 
+_RuntimeMinutes, averageRating, genres_DOcumentary have the most impact, and genres_Drama have some impact on voteHighLow predicitons._
 ![model_graph](images/automl_metrics_Gradient_Boosting2.png)
 
-* Logistic Regression
+* <ins>Logistic Regression</ins> . 
+_Genres_Documentary has the most impact, and averageRating, rateGreatehrThan8, and runtimeMinutes equally have impact on voteHighLow prediciton._
 ![model_graph](images/automl_metrics_Logistic_Regression2.png)
+
 
 ### Evaluated results are stored in `Experiments` tab 
 * Clicking `id` retuns to the Evaluation Metrics page
