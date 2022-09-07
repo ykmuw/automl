@@ -28,7 +28,7 @@ Output metrics help users select the most and least successful models for a give
 
 # Users profile
 * Our target users are those who want to analyze data and have the results represented in multiple ML models.
-* To run the AutoML application, users should download required libraries and run Python modules (see Install on your mac section).
+* To run the AutoML application, users should download required libraries and run Python modules (see `Install on your mac` section).
 
 
 # Data sources
@@ -205,13 +205,12 @@ python3.9 app.py
 * Not applied category variables - too many unique values
 ![histgram](images/automl_variable_link_primaryTitle.png)
 
-* You will select a binary object variable in `Target` which you want to predict, as well as you will select appropriate values in `Category Variables` which you want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below, then click `Run`.
+* Users will select a binary object variable in `Target` which users want to predict, as well as select appropriate values in `Category Variables` which users want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below, then click `Run`.
 ![histgram](images/automl_summary_with_greaterthan8.png)
 
-
-
 * Fit multiple ML models automatically and compare statistical scores
-![metrics](images/metrics.jpng)
+![metrics](images/automl_evaluation_metrics.png)
+
 * Display ML models in graph for Spark in Local
 ![explainable ai](images/explainable_ai.png)
 
