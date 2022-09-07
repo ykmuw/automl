@@ -211,8 +211,16 @@ python3.9 app.py
 * Fit multiple ML models automatically and compare statistical scores
 ![metrics](images/automl_evaluation_metrics.png)
 
-* Display ML models in graph for Spark in Local
-![explainable ai](images/explainable_ai.png)
+* Display ML models in graph - LightGBM
+![model_graph](images/automl_LightGMB.png)
+
+* Display ML models in graph - Gradient Boosting
+![model_graph](images/automl_Gradient_Boosting.png)
+
+* Display ML models in graph - Random Forest
+![model_graph](images/automl_Random_Forest.png)
+
+
 
 # Algorithms
 Here are some ML model diagrams and algorithms, and sharing the algorithm code sample used in AutoML.
