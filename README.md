@@ -171,7 +171,7 @@ python3.9 app.py
 # AutoML Features
 * Select sample/imdb_movie_rating_2010_2022.csv from user's local folder through `Choose File` button, and click `Import a new dataset`. 
 <p align="center">
-  <img src="images/automl_manage_dataset.jpg" width="800" hight="200">
+  <img src="images/automl_manage_dataset.png" width="800" hight="200">
 </p>
 
 * AutoML registers the dataset users uploaded, and display string-type as default in `Category Variables`, as well as string-type or if the value contains too many unique variables as default in `Unused Variables for Modeling`. 
