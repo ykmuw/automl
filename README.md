@@ -169,25 +169,38 @@ python3.9 app.py
 <img src = "images/automl_application_diagram.png" width="800">
 
 # AutoML Features
-* Select sample/imdb_movie_rating_2010_2022.csv from your local folder through `Choose File` button, and click `Import a new dataset`. 
+* Select sample/imdb_movie_rating_2010_2022.csv from user's local folder through `Choose File` button, and click `Import a new dataset`. 
 <p align="center">
   <img src="images/automl_manage_dataset.jpg" width="800" hight="200">
 </p>
 
-* AutoML registers the dataset you uploaded, and display string-type as default in `Category Variables`, as well as string-type or if the value contains too many unique variables as default in `Unused Variables for Modeling`. 
+* AutoML registers the dataset users uploaded, and display string-type as default in `Category Variables`, as well as string-type or if the value contains too many unique variables as default in `Unused Variables for Modeling`. 
 <p align="center">
   <img src="images/automl_summary_uploaded_data.jpg" width="800" hight="700">
 </p>
 
-* Provide useful comments to check data quality (missing value, uniques, and outliers)
-![data quality](images/data_quality.png)
-* Visualize data distribution per variable to understand data
-Applied category variables
+* AutoML provides users uploaded file data summary in `Summary` tab, and data samples in `Samples` tab. There are also useful comments available to check data quality (missing value, uniques, and outliers).
+<p align="center">
+  <img src="images/automl_summary_samples.jpg" width="800" hight="700">
+</p>
+
+* AutoML helps visualize data distribution per variable for users to understand data
+### Applied category variables - normal distribution
 ![histgram](images/histgram_pclass.png)
-Not applied category variables - too many missing values
+### Not applied category variables - too many missing values
 ![histgram](images/histgram_age.png)
-Not applied category variables - too many unique values
+### Not applied category variables - too many unique values
 ![histgram](images/histgram_name.png)
+
+* You will select a binary object variable in `Target` which you want to predict, as well as you will select appropriate values in `Category Variables` which you want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below.
+<p align="center">
+  <img src="images/automl_summary_with_greaterthan8.png" width="800" hight="700">
+</p>
+
+
+
+
+
 * Internally non-numerical expressions are converted to numerical expressions 1 or 0
 ![metrics](images/data_clearning_for_category_variables.png) 
 * Fit multiple ML models automatically and compare statistical scores
@@ -196,7 +209,7 @@ Not applied category variables - too many unique values
 ![explainable ai](images/explainable_ai.png)
 
 # Algorithms
-Here are some ML model diagram and algorithms are explained in code sample in AutoML.
+Here are some ML model diagrams and algorithms, and sharing the algorithm code sample used in AutoML.
 <p align="center">
   <img src="images/automl_random_forest.jpg">
 </p>
