@@ -225,16 +225,16 @@ Logs when AutoML is executed:
 ### Output of target binary variables as `rateGraterThan8`  
 ![metrics](images/automl_evaluation_metrics.png)
 
-* LightGBM
-NumVotes, runtimeMinutes, and genres_Documentary have the most impact on rateGraterThan8 prediction.
+* LightGBM  
+_NumVotes, runtimeMinutes, and genres_Documentary have the most impact on rateGraterThan8 prediction._
 ![model_graph](images/automl_LightGBM.png)
 
-* Random Forest
-NumVotes, genres_Documentary, and runtimeMinutes have the most impact on rateGraterThan8 prediction.
+* Random Forest  
+_NumVotes, genres_Documentary, and runtimeMinutes have the most impact on rateGraterThan8 prediction._
 ![model_graph](images/automl_metrics_Random_Forest.png)
 
-* Ridge Logistic Regression
-RuntimeMinutes has the most impact, and genres_Documentary and genres_Drama have some impact on rateGraterThan8 prediction.
+* Ridge Logistic Regression  
+_R_untimeMinutes has the most impact, and genres_Documentary and genres_Drama have some impact on rateGraterThan8 prediction._
 ![model_graph](images/automl_Ridge_Logistic_Regression.png)
 
 ### Output of target binary variables as `voteHighLow`  
