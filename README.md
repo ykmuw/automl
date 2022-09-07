@@ -129,8 +129,7 @@ A user’s uploaded files are stored in the data folder as 1.csv, 2.csv, and so 
 
 ### Variables in evaluation metrics
 TP: True Positive, TN: True Negative, FP: False Positive, and FN: False Negative
-* AUC score: Receiver Operating Characteristic (ROC) = FPR*chi + TPR
-    -> AUC score is below 0.5, the output prediction is not trusted 
+* AUC score: Receiver Operating Characteristic (ROC) = FPR*chi + TPR (if AUC score is below 0.5, the prediction output can not be trusted) 
 * Precision score: TP/(TP+FP)
 * Recall(Sensitivity) score: TP/(TP+FN)
 * Accuracy score: (TP+TN)/(TP+TN+FP+FN)
@@ -154,6 +153,7 @@ python3.9 init_db.py (once input.db has been created, you don't need to run this
 python3.9 app.py
 # open 127.0.0.1:5000 on your browser
 ```
+Logs when AutoML is executed:
 ![histogram](images/automl_execution.png)
 
 
@@ -215,6 +215,7 @@ python3.9 app.py
 ![histogram](images/automl_variable_link_primaryTitle.png)
 
 * Users will select a binary object variable in `Target` which users want to predict, as well as select appropriate values in `Category Variables` which users want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below, then click `Run`.
+
 ![histogram](images/automl_summary_with_greaterthan8.png)
 
 
@@ -233,7 +234,6 @@ python3.9 app.py
 * Ridge Logistic Regression
 ![model_graph](images/automl_Ridge_Logistic_Regression.png)
 
-
 ### Output of target binary variables as `voteHighLow`  
 ![metrics](images/automl_evaluation_metrics2.png)
 
@@ -245,6 +245,10 @@ python3.9 app.py
 
 * Logistic Regression
 ![model_graph](images/automl_metrics_Logistic_Regression2.png)
+
+### Evaluated results are stored in `Experiments` tab 
+* Clicking `id` retuns to the Evaluation Metrics page
+![metrics](images/automl_summary_experiments.png)
 
 
 # Algorithms
