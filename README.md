@@ -194,9 +194,8 @@ python3.9 app.py
 
 * You will select a binary object variable in `Target` which you want to predict, as well as you will select appropriate values in `Category Variables` which you want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below.
 <p align="center">
-  <img src="images/automl_summary_with_greaterthan8.png" width="800" hight="700">
+  <img src="images/automl_summary_with_greaterthan8.jpg" width="800" hight="700">
 </p>
-
 
 
 
