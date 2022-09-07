@@ -1,0 +1,84 @@
+{% extends 'base.html' %} {% block body %}
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="#data_summary" class="nav-link active" data-toggle="tab">Summary</a>
+    </li>
+    <li class="nav-item">
+      <a href="#sample" class="nav-link" data-toggle="tab">Samples</a>
+    </li>
+    <li class="nav-item">
+      <a href="#experiments" class="nav-link" data-toggle="tab">Experiments</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="data_summary" class="tab-pane active">
+      {{table|safe}}
+    </div>
+    <div id="sample" class="tab-pane">
+      {{sample|safe}}
+    </div>
+    <div id="experiments" class="tab-pane">
+      {{experiment|safe}}
+    </div>
+  </div>
+
+  <h2>New Experiment</h2>
+
+  <form method='POST'>
+    
+    <div class="form-group">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" name="experiment_name" placeholder="Experimental name" required>
+          <label for="target">Target:</label>
+          <select class="form-select" id="target" name="target">
+          {% for v in var_name %}
+            {% if v.unique == 2 %}
+              <option value="{{ v.var_name }}">{{ v.var_name }}</option>
+            {% endif %}
+          {% endfor %}
+          </select>
+          <small class="form-text text-muted">You can only select binary variables.</small>
+        </div>
+        <div class="col">
+        <label for="category_vars">Category Variables:</label>
+          {% for v in var_name %}
+          <div class="form-check form-switch">
+            {% if v.var_type == 'String' %}
+                <input type="checkbox" class="form-check-input" id="category" value="{{ v.var_name }}" name="category" checked>
+            {% else %}
+                <input type="checkbox" class="form-check-input" id="category" value="{{ v.var_name }}" name="category"> 
+            {% endif %}
+            <label for="category_{{ v.var_name }}" class="form-check-label">{{ v.var_name }}</label>
+          </div>
+          {% endfor %}
+          <small class="form-text text-muted">String-type variables are true as default.</small>
+        </div>
+        <div class="col">
+        <label for="unused_vars">Unused Variables for Modeling:</label>
+          {% for v in var_name %}
+          <div class="form-check form-switch">
+            {% if v.var_type == 'String' and v.unique > v.count/2 %}
+                <input type="checkbox" class="form-check-input" id="unused" value="{{ v.var_name }}" name="unused" checked>
+            {% else %} 
+                <input type="checkbox" class="form-check-input" id="unused" value="{{ v.var_name }}" name="unused"> 
+            {% endif %}
+            <label for="unused_{{ v.var_name }}" class="form-check-label">{{ v.var_name }}</label>
+          </div>
+          {% endfor %}
+          <small class="form-text text-muted">String-type variables with too many uniqueness are true as default.</small>
+      </div>
+    </div>
+    <p>
+      <div>
+        <button type="submit" class="btn btn-primary" name="experiment_new">Run</button>
+      </div>
+    </p>
+</form>
+
+</div>
+
+{% endblock %}

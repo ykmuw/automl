@@ -116,15 +116,16 @@ A user’s uploaded files are stored in the data folder as 1.csv, 2.csv, and so 
 * As a default, AutoML detects variables that cannot be used for ML modeling because they are non-numerical expressions.
 * In addition to default detection, user's selected variables in `Category Variables` should be assigned numerical expressions 1 or 0, and one of them is dropped by get_dummies function with drop_first = True.
 <img src = "images/automl_data_clearning_for_category_variables.png" width="800">
-<img src = "images/automl_data_clearning_for_category_variables.jpg" width="800">
 
 ### Unused variables 
 * By default, AutoML identifies variables that are inappropriate for use in ML modeling, such as those with an excessive number of missing values, too many unique values, and so on. Aside from carrying out default detection, users are required to select more unused variables on the basis of their decisions.
 
 ### Variables in evaluation metrics
+TP: True Positive, TN: True Negative, FP: False Positive, and FN: False Negative
 * AUC score: Receiver Operating Characteristic (ROC) = FPR*chi + TPR
+    -> AUC score is below 0.5, the output prediction is not trusted 
 * Precision score: TP/(TP+FP)
-* Recall score: TP/(TP+FN)
+* Recall(Sensitivity) score: TP/(TP+FN)
 * Accuracy score: (TP+TN)/(TP+TN+FP+FN)
 
 ### Internally non-numerical expressions are converted to numerical expressions 1 or 0

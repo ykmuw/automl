@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block body %}
+
+<div class="container">
+  <h1 class="m-5">{{name}}</h1>
+  <h2>Evaluation Metrics</h2>
+  {{result|safe}}
+  <h2>Explainable AI</h2>
+  <div id='chart' class='chart' ”></div>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <script type='text/javascript'>
+    var graphs = {{ graphJSON | safe }};
+    Plotly.plot('chart', graphs, {});
+
+  </script>
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+    <p class="border-top"></p>
+    <form class="m-5" method='POST' enctype="multipart/form-data">
+      
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="inputFile" name="inputFile" required>
+      </div>
+      <p></p>
+      
+      <input type="radio" class="form-check-input" name="stored" value="python" checked>
+        <label class="form-check-label" for="python">Spark in Local</label>
+      <input type="radio" class="form-check-input" name="stored" value="spark">
+        <label class="form-check-label" for="spark">Spark on Amazon EMR</label>
+      <p></p>
+      
+      <button type="submit" class="btn btn-info btn-lg">Import a new dataset</button>
+      
+    </form>
+    <p class="border-bottom"></p>
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>dataset</th>
+          <th>process</th> 
+          <th>row_number</th>
+          <th>column_number</th>
+          <th>detail</th>
+          <th>delete</th>
+        </tr>
+      </thead>
+      {% for dataset in datasets %}
+        <tr>
+          <td>{{ dataset.id }}</td>
+          <td>{{ dataset.dataset_name }}</td>
+          {% if dataset.stored == 0 %}
+              <td>Spark in Local</td>
+          {% elif dataset.stored == 1 %}
+              <td>Spark on Amazon EMR</td>
+          {% endif %}
+          <td>{{ dataset.row_number }}</td>
+          <td>{{ dataset.column_number }}</td>
+          <td><a class="btn btn-success btn-sm" href="/detail/{{ dataset.id }}" role="button">Detail</a></td>
+          <td><a class="btn btn-danger btn-sm" href="/delete/{{ dataset.id }}" role="button">Delete</a></td>
+        </tr>       
+      {% endfor %}
+    </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+<script>
+  bsCustomFileInput.init();
+</script>
+
+{% endblock %}
