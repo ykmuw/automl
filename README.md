@@ -23,9 +23,9 @@ Output metrics help users select the most and least successful models for a give
 
 # Output view and metrics
 * Users can review their uploaded CSV files in the summary view. 
-* Quality columns show them how input data look.
+* Quality columns show how input data looks like.
 * After ML modeling, area under the curve (AUC), precision, recall, and accuracy values are displayed.
-* For Spark in Local, SHapley Additive exPlanations (SHAP) is generated in histgram by clicking the ML model names, so that users can figire which category values impact the most in the ML modeling. SHAP is a method of explaining individual predictions. A positive SHAP value means a positive impact on prediction. In AutoML, SHAP values are converted to absolute values, and displayed in a histgram.
+* For Spark in Local, SHapley Additive exPlanations (SHAP) is generated in histogram by clicking the ML model names, so that users can figure which category values impact the most against the target value in the ML modeling. SHAP is a method of explaining individual predictions. A positive SHAP value means a positive impact on prediction. In AutoML, SHAP values are converted to absolute values, and displayed in a histogram.
 ![shap](images/automl_shap.png)
 
 
@@ -150,6 +150,8 @@ python3.9 init_db.py (once input.db has been created, you don't need to run this
 python3.9 app.py
 # open 127.0.0.1:5000 on your browser
 ```
+![histogram](images/automl_execution.png)
+
 
 # App structure
 
@@ -201,18 +203,21 @@ python3.9 app.py
 ![summary](images/automl_summary_links.png)
 
 * Applied category variables - skewed distribution
-![histgram](images/automl_variable_link_genres.png)
+![histogram](images/automl_variable_link_genres.png)
 * Applied category variables - normal distribution
-![histgram](images/automl_variable_link_averageRating.png)
-![histgram](images/automl_variable_link_startYear.png)
+![histogram](images/automl_variable_link_averageRating.png)
+![histogram](images/automl_variable_link_startYear.png)
 * Not applied category variables - too many unique values
-![histgram](images/automl_variable_link_primaryTitle.png)
+![histogram](images/automl_variable_link_primaryTitle.png)
 
 * Users will select a binary object variable in `Target` which users want to predict, as well as select appropriate values in `Category Variables` which users want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below, then click `Run`.
-![histgram](images/automl_summary_with_greaterthan8.png)
+![histogram](images/automl_summary_with_greaterthan8.png)
 
-# AutoML Evaluation Metrics (Output)
+
+# AutoML Evaluation Metrics
 * AutoML fits multiple ML models automatically and provide users comparable statistical scores. Users can click each ML model link to observe output in graph.
+
+## Output of target binary variables as `rateGraterThan8`  
 ![metrics](images/automl_evaluation_metrics.png)
 
 * Display ML models in graph - LightGBM
@@ -224,6 +229,24 @@ python3.9 app.py
 * Display ML models in graph - Ridge Logistic Regression
 ![model_graph](images/automl_Ridge_Logistic_Regression.png)
 
+
+## Output of target binary variables as `voteHighLow`  
+![metrics](images/automl_evaluation_metrics2.png)
+
+* Display ML models in graph - LightGBM
+![model_graph](images/automl_metrics_LightGBM2.png)
+
+* Display ML models in graph - Gradient Boosting
+![model_graph](images/automl_metrics_Gradient_Boosting2.png)
+
+* Display ML models in graph - Logistic Regression
+![model_graph](images/automl_metrics_Logistic_Regression2.png)
+
+
+# Algorithms
+Here are some ML model diagrams and algorithms, and sharing the algorithm code sample used in AutoML.
+<p align="center">
+  <img src="images/automl_random_forest.jpg">
 # Algorithms
 Here are some ML model diagrams and algorithms, and sharing the algorithm code sample used in AutoML.
 <p align="center">
