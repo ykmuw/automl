@@ -240,15 +240,15 @@ _R_untimeMinutes has the most impact, and genres_Documentary and genres_Drama ha
 ### Output of target binary variables as `voteHighLow`  
 ![metrics](images/automl_evaluation_metrics2.png)
 
-* <ins>LightGBM</ins> . 
-_RuntimeMinutes has the most impact, and averageRating, genres_Documentary, and genres_Dorama have some impact on voteHighLow prediction._
+* <ins>LightGBM</ins>  
+ _RuntimeMinutes has the most impact, and averageRating, genres_Documentary, and genres_Dorama have some impact on voteHighLow prediction._
 ![model_graph](images/automl_metrics_LightGBM2.png)
 
-* <ins>Gradient Boosting</ins> . 
+* <ins>Gradient Boosting</ins>  
 _RuntimeMinutes, averageRating, genres_DOcumentary have the most impact, and genres_Drama have some impact on voteHighLow predicitons._
 ![model_graph](images/automl_metrics_Gradient_Boosting2.png)
 
-* <ins>Logistic Regression</ins> . 
+* <ins>Logistic Regression</ins>  
 _Genres_Documentary has the most impact, and averageRating, rateGreatehrThan8, and runtimeMinutes equally have impact on voteHighLow prediciton._
 ![model_graph](images/automl_metrics_Logistic_Regression2.png)
 
