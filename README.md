@@ -176,7 +176,7 @@ python3.9 app.py
 
 * AutoML registers the dataset users uploaded, and display string-type as default in `Category Variables`, as well as string-type or if the value contains too many unique variables as default in `Unused Variables for Modeling`. 
 <p align="center">
-  <img src="images/automl_summary_uploaded_data.jpg" width="800" hight="700">
+  <img src="images/automl_summary_file_uploaded.png" width="800" hight="700">
 </p>
 
 * AutoML provides users uploaded file data summary in `Summary` tab, and data samples in `Samples` tab. There are also useful comments available to check data quality (missing value, uniques, and outliers).
