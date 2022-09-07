@@ -10,11 +10,13 @@ Output metrics help users select the most and least successful models for a give
 <img src = "images/automl_discussion.png" width="400">
 </p>
 
+
 # AutoML
 * While a machine learning(ML) project requires iterative proceses from understanding data to tuning model parameters in order to develop a optimal model for data, some tasks in the analysis process can be automated. AutoML implements functions to accelerate the process of developing the ML model.
 <p align="center">
 <img src = "images/automl_diagram.jpg" width="800">
 </p>
+
 
 # Output view and metrics
 * Users can review their uploaded CSV files in the summary view. 
@@ -23,9 +25,11 @@ Output metrics help users select the most and least successful models for a give
 * For Spark in Local, SHapley Additive exPlanations (SHAP) is generated in histgram by clicking the ML model names, so that users can figire which category values impact the most in the ML modeling. SHAP is a method of explaining individual predictions. A positive SHAP value means a positive impact on prediction. In AutoML, SHAP values are converted to absolute values, and displayed in a histgram.
 ![shap](images/autml_shap.png)
 
+
 # Users profile
 * Our target users are those who want to analyze data and have the results represented in multiple ML models.
 * To run the AutoML application, users should download required libraries and run Python modules (see Install on your mac section).
+
 
 # Data sources
 IMDb (an abbreviation of Internet Movie Database) is an online database of information related to films, television series, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews. The earliest movie or TV show start year is 1888 and continue to be provided by 2024. IMDb is owned and operated by IMDb.com, Inc., a subsidiary of Amazon.
@@ -171,6 +175,7 @@ python3.9 app.py
 └── LICENSE
 ```
 <img src = "images/automl_application_diagram.png" width="800">
+
 
 # AutoML Features
 * Select sample/imdb_movie_rating_2010_2022.csv from user's local folder through `Choose File` button, and click `Import a new dataset`. 
