@@ -238,3 +238,4 @@ Here are some ML model diagrams and algorithms, and sharing the algorithm code s
 # Future enhancement
 * Increase the number of comparable ML models.
 * Add functions to tune multiple parameters by grid search.
+* Replace local to Apache Spark on EMR (Hadoop) on EC2 with S3.
