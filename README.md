@@ -195,11 +195,8 @@ python3.9 app.py
 ####   Not applied category variables - too many unique values
 ![histgram](images/automl_variable_link_primaryTitle.png)
 
-* You will select a binary object variable in `Target` which you want to predict, as well as you will select appropriate values in `Category Variables` which you want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below.
-<p align="center">
-  <img src="images/automl_summary_with_greaterthan8.jpg" width="800" hight="700">
-</p>
-
+* You will select a binary object variable in `Target` which you want to predict, as well as you will select appropriate values in `Category Variables` which you want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below, then click `Run`.
+![histgram](images/automl_summary_with_greaterthan8.png)
 
 
 
