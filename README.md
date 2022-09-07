@@ -211,7 +211,8 @@ python3.9 app.py
 * Users will select a binary object variable in `Target` which users want to predict, as well as select appropriate values in `Category Variables` which users want to use them as category in ML modeling, and also select appropriate unused values in `Unused Variables for Modeling` like below, then click `Run`.
 ![histgram](images/automl_summary_with_greaterthan8.png)
 
-* Fit multiple ML models automatically and compare statistical scores
+# AutoML Evaluation Metrics (Output)
+* AutoML fits multiple ML models automatically and provide users comparable statistical scores. Users can click each ML model link to observe output in graph.
 ![metrics](images/automl_evaluation_metrics.png)
 
 * Display ML models in graph - LightGBM
