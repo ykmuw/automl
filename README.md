@@ -186,7 +186,7 @@ Logs when AutoML is executed:
 <img src = "images/application_diagram.png" width="800">
 
 
-# AutoML Features
+# AutoML features
 * Select sample/imdb_movie_rating_2010_2022.csv from user's local folder through `Choose File` button, and click `Import a new dataset`. 
 <p align="center">
   <img src="images/automl_manage_dataset.png" width="800" hight="200">
@@ -219,7 +219,7 @@ Logs when AutoML is executed:
 ![histogram](images/automl_summary_with_greaterthan8.png)
 
 
-# AutoML Evaluation Metrics
+# AutoML evaluation metrics
 * AutoML fits multiple ML models automatically and provide users comparable statistical scores. Users can click each ML model link to observe output in graph.
 
 ### Output of target binary variables as `rateGraterThan8`  
