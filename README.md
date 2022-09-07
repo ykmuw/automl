@@ -212,15 +212,13 @@ python3.9 app.py
 ![metrics](images/automl_evaluation_metrics.png)
 
 * Display ML models in graph - LightGBM
-![model_graph](images/automl_LightGMB.png)
-
-* Display ML models in graph - Gradient Boosting
-![model_graph](images/automl_Gradient_Boosting.png)
+![model_graph](images/automl_LightGBM.png)
 
 * Display ML models in graph - Random Forest
 ![model_graph](images/automl_Random_Forest.png)
 
-
+* Display ML models in graph - Ridge Logistic Regression
+![model_graph](images/automl_Ridge_Logistic_Regression.png)
 
 # Algorithms
 Here are some ML model diagrams and algorithms, and sharing the algorithm code sample used in AutoML.
