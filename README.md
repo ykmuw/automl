@@ -181,6 +181,7 @@ python3.9 app.py
 
 * AutoML provides users uploaded file data summary in `Summary` tab, and data samples in `Samples` tab. There are also useful comments available to check data quality (missing value, uniques, and outliers).
 <p align="center">
+  <img src="images/automl_summary_summary.jpg" width="800" hight="700">
   <img src="images/automl_summary_samples.jpg" width="800" hight="700">
 </p>
 
