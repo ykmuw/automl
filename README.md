@@ -23,7 +23,7 @@ Output metrics help users select the most and least successful models for a give
 * Quality columns show them how input data look.
 * After ML modeling, area under the curve (AUC), precision, recall, and accuracy values are displayed.
 * For Spark in Local, SHapley Additive exPlanations (SHAP) is generated in histgram by clicking the ML model names, so that users can figire which category values impact the most in the ML modeling. SHAP is a method of explaining individual predictions. A positive SHAP value means a positive impact on prediction. In AutoML, SHAP values are converted to absolute values, and displayed in a histgram.
-![shap](images/autml_shap.png)
+![shap](images/automl_shap.png)
 
 
 # Users profile
