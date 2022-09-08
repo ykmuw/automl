@@ -1,4 +1,4 @@
-# Analysis of ML Modeling IMDb movie data in AutML 
+# Analysis of ML Modeling IMDb movie data in AutoML 
 ![autoMLimage](images/automl_image.png)
 
 # What is AutoML?
